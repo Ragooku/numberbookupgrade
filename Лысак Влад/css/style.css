@@ -1,0 +1,272 @@
+/*-------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #F1F3F4;
+}
+
+/*-------------Main------------------*/
+
+main, #modal, #container-errors {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+#modal {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+/*-------------Main------------------*/
+
+#container-errors {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    margin-top: 10px;
+    min-height: 100px;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    color: #721C24;
+    background-color: #F8D7DA;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/*--------------Header-----------------*/
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px 0px 40px;
+    border-bottom: 1px solid #D8DADB;
+}
+
+.title-container {
+    display: flex;
+}
+
+.title {
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    margin-top: 3px;
+}
+
+.phone-header {
+    font-size: 25px;
+    color: #4285F4;
+    margin-right: 30px;
+}
+
+.close-header, .contact-close {
+    font-size: 20px;
+    color: #757575;
+}
+
+.close-header:hover {
+    color: #4285F4;
+}
+
+.close-header:active{
+    color: #757575;
+}
+
+
+.search-container {
+    position: relative;
+}
+
+.fa-search {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: #757575;
+}
+
+.fa-search:hover {
+    color: #4285F4;
+}
+
+.fa-search:active {
+    color: #757575;
+}
+
+.search {
+    margin: 0!important;
+    padding-left: 40px;
+}
+
+#not-found {
+    display: none;
+    position: absolute;
+    top: 175px;
+    left: 20px;
+    font-weight: 600;
+}
+
+/*--------------Form-----------------*/
+
+form {
+    display: flex;
+    justify-content: center;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 20px 40px;
+}
+
+input, button {
+    padding: 10px 15px;
+}
+
+form input, .search {
+    border-radius: 30px;
+    border: 1px solid #D8DADB;
+    margin-bottom: 15px;
+}
+
+.checkbox-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.checkbox-container label {
+    color: #757575;
+    font-size: 15px;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+    height: 17px;
+    width: 17px;
+}
+
+/*----------Contacts-------------*/
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    padding: 20px 40px 20px 40px;
+    overflow-y:  auto;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#empty {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.photo-contact {
+    height: 60px;
+    width: 60px;
+    border-radius: 6px;
+    background-color: #757575;
+}
+
+.info-contact {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.name-contact {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.phone-contact {
+    font-size: 16px;
+}
+
+.icon-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-close {
+    margin-bottom: 10px;
+}
+
+.contact-close:hover {
+    color: #4285F4;
+}
+
+.contact-close:active{
+    color: #757575;
+}
+
+.contact-like {
+    color: red;
+}
+
+/*--------------Footer-----------------*/
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+button {
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #4285F4;
+}
+
+button:hover {
+    background-color: #78A7F4;
+}
+
+button:active {
+    background-color: #4285F4;
+}

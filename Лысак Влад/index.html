@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="modal">
+    <header>
+        <div class="title-container">
+            <i class="fa fa-phone-square phone-header" aria-hidden="true"></i> <h3 class="title">Add contact</h3>
+        </div>
+        <i class="fa fa-times close-header" aria-hidden="true" id="closeH"></i>
+    </header>
+    <form>
+        <input type="text" tabindex="1" name="name" placeholder="Name" min="2" max="10" id="inputName">
+        <input type="tel" tabindex="2" name="tel" placeholder="Phone" min="11" max="11" id="inputTel">
+        <div class="checkbox-container">
+            <input type="checkbox" id="favorites" name="favorites">
+            <label for="favorites">Favorites</label>
+        </div>
+    </form>
+    <footer>
+        <button tabindex="5" id="btn-addContact">Create</button>
+    </footer>
+</div>
+
+<main id="main">
+    <header>
+        <i class="fa fa-phone-square phone-header" aria-hidden="true"></i>
+        <div class="search-container">
+            <span id="not-found">Contact not found</span>
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="search" class="search" id="searchInput" placeholder="Name contact">
+        </div>
+    </header>
+    <article id="contacts"></article>
+    <footer>
+        <button tabindex="5" id="btn-contacts">Add contact</button>
+    </footer>
+</main>
+
+<div id="container-errors"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
